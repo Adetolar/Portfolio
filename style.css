@@ -1,0 +1,486 @@
+::before,
+::after,
+ul,
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #d9d9d9;
+  --color-accent-1: #4ee1a0;
+  --color-accent-2: #242424;
+  --color-background: #151515;
+
+  --error: #ff6f5b;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+nav {
+  /* border: 1px solid red; */
+  padding: 20px 30px;
+}
+.wrapper {
+  max-width: 1110px;
+  /* border: 1px solid red; */
+  position: relative;
+  overflow-x: hidden;
+  padding: 20px 30px;
+}
+
+#myImage_container-1 {
+  position: relative;
+  margin: 0px auto;
+  background-image: url(/assets/images/Adetola_Fashina-removebg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 320px;
+  background-color: var(--color-accent-2);
+}
+
+nav,
+.footerSocials {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.Container_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ringDesign {
+  position: absolute;
+  top: -240px;
+  left: -350px;
+  z-index: -1;
+}
+
+.designCircle {
+  overflow-x: hidden;
+  position: absolute;
+  z-index: 1;
+  right: -100px;
+  top: -157px;
+}
+
+#Myname {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+nav {
+  max-width: 1110px;
+}
+
+nav ul li,
+.footerSocials ul li {
+  display: inline;
+  padding: 0px 5px;
+}
+
+#hero {
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+  line-height: 1;
+}
+
+h1 span {
+  border-bottom: 5px solid var(--color-accent-1);
+  text-shadow: 0 0 2px cyan, 0 0 2px cyan, 0 0 2px cyan, 0 0 2px cyan,
+    0 0 2px cyan, 0 0 2px cyan, 0 0 2px cyan;
+}
+
+.cta {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-accent-1);
+}
+
+.cta-project {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-accent-1);
+  margin-right: 20px;
+}
+
+#hero > p {
+  padding: 10px 0px 20px;
+}
+
+p {
+  color: var(--color-secondary);
+  line-height: 1.7;
+}
+
+#Experience {
+  /* border: 1px solid pink; */
+  margin: 70px 0px;
+  display: grid;
+}
+
+.content {
+  padding: 10px 0px;
+  display: grid;
+}
+.content div {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.heading + p {
+  font-size: small;
+}
+
+.content div p {
+  margin: 0px auto;
+}
+
+#Project {
+  /* border: 1px solid blue; */
+  padding: 30px 0px;
+}
+
+.content_header {
+  padding-bottom: 30px;
+}
+
+#project_wrapper {
+  display: grid;
+}
+
+.project {
+  min-height: 253px;
+  /* border: 1px solid red; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay-card {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+  background: var(--color-background);
+  opacity: 0.75;
+  transition: ease-in 10;
+}
+
+.card a {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.projectTitle {
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.project_details span {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.project_link {
+  padding: 25px 0px;
+}
+
+.design-portfolio {
+  background-image: url(/assets/images/thumbnail-project-1-small.webp);
+}
+
+.e-learning {
+  background-image: url(/assets/images/thumbnail-project-2-small.webp);
+}
+
+.unistate_landingPage {
+  background-image: url(/assets/images/unistate\ web\ page.png);
+}
+
+.burger_landingPage {
+  background-image: url(/assets/images/burger\ landing\ page.jpg);
+}
+
+.headphone_landingPage {
+  background-image: url(/assets/images/headphone\ landing\ page.jpg);
+}
+
+.huddle_landingPage {
+  background-image: url(/assets/images/huddle\ landing\ page.jpg);
+}
+
+footer {
+  background-color: var(--color-accent-2);
+  padding: 40px 0px;
+}
+
+h3 {
+  font-size: xx-large;
+}
+
+.contactMe_content {
+  text-align: center;
+}
+
+.contactMe_content p {
+  font-size: small;
+  margin: 10px 0px;
+}
+
+.input-container {
+  border-bottom: 1px solid var(--color-primary);
+
+  padding: 20px 0px 10px;
+}
+
+#name,
+#email {
+  background: var(--color-accent-2);
+  font-size: large;
+  width: 95%;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+}
+
+#ClientMessage {
+  padding-left: 10px;
+  width: 100%;
+  min-height: 70px;
+  font-size: larger;
+  background: inherit;
+  outline: none;
+  color: var(--color-primary);
+}
+
+#btn {
+  display: block;
+  font-size: large;
+  padding: 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  background: inherit;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-accent-1);
+  margin-left: auto;
+  color: var(--color-primary);
+}
+
+.error {
+  color: var(--error);
+  display: block;
+  margin-left: auto;
+}
+
+.footer_rings-1,
+.footer_rings-2 {
+  display: none;
+}
+
+.footerSocials {
+  border-top: 1px solid var(--color-primary);
+  margin-top: 100px;
+  padding-top: 25px;
+}
+
+.footerSocials > a {
+  color: var(--color-primary);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 426px) {
+  nav,
+  .footerSocials {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px; /*remember to use this padding for main container to ensure uniformitity  */
+  }
+
+  .hero_content {
+    text-align: left;
+    width: 75%;
+    margin-top: 45px;
+  }
+
+  h1 {
+    font-size: 4.3rem;
+    line-height: 1.1;
+    padding-bottom: 60px;
+  }
+
+  h1 + P {
+    font-size: large;
+    padding-right: 50px;
+    padding-bottom: 20px;
+  }
+
+  .hero_content a {
+    font-size: larger;
+  }
+
+  #myImage_container-1 {
+    position: absolute;
+    top: -10px;
+    width: 280px;
+    height: 500px;
+    /* border: 1px solid red; */
+    right: -0px;
+  }
+
+  .ringDesign {
+    position: absolute;
+    top: -63px;
+    left: -350px;
+    z-index: -1;
+  }
+
+  .designCircle {
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 1;
+    right: -96px;
+    top: 297px;
+  }
+
+  .content {
+    grid-template-columns: auto auto;
+    height: 35vh;
+  }
+
+  .content div {
+    text-align: left;
+  }
+
+  #project_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .contactMe {
+    padding: 0px 195px;
+  }
+
+  .contactMe {
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .footer_rings-1 {
+    display: block;
+    position: absolute;
+    top: 350px;
+    left: -350px;
+  }
+
+  .footerSocials {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav,
+  .wrapper,
+  footer {
+    margin: 0px auto;
+  }
+
+  .wrapper {
+    max-width: 1110px;
+    /* border: 1px solid red; For easy identification */
+    overflow-x: visible;
+  }
+
+  .designCircle {
+    right: 160px;
+    top: 257px;
+  }
+
+  .project {
+    min-height: 400px;
+  }
+
+  .project_details {
+    margin-bottom: 50px;
+  }
+
+  .project_link {
+    display: none;
+  }
+
+  .project:hover .overlay-card {
+    display: block;
+  }
+
+  .content {
+    margin-top: 70px;
+    grid-template-columns: auto auto auto;
+    height: 20vh;
+  }
+
+  .contactMe {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    /* border: 1px solid red; For easy identification */
+  }
+
+  h3 {
+    padding-top: 20px;
+    font-size: xx-large;
+  }
+
+  .contactMe_content {
+    width: 40%;
+    text-align: left;
+    /* border: 1px solid white; For easy identification */
+  }
+
+  #Client_form {
+    width: 40%;
+    /* border: 1px solid green; For easy identification */
+  }
+
+  .footer_rings-1 {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: -350px;
+  }
+}
