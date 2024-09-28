@@ -263,9 +263,15 @@ h3 {
 }
 
 .input-container {
-  border-bottom: 1px solid var(--color-primary);
+  border-top: 1px solid var(--color-primary);
+}
 
-  padding: 20px 0px 10px;
+.error {
+  color: #ff6f5b;
+  text-align: right;
+  border-top: 1px solid white;
+  padding: 0px 0px 40px;
+  outline: none;
 }
 
 #name,
@@ -299,12 +305,6 @@ h3 {
   border-bottom: 2px solid var(--color-accent-1);
   margin-left: auto;
   color: var(--color-primary);
-}
-
-.error {
-  color: var(--error);
-  display: block;
-  margin-left: auto;
 }
 
 .footer_rings-1,

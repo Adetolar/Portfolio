@@ -108,7 +108,7 @@
             </div>
             <div>
               <p class="heading">Webflow</p>
-              <p>4 Month Experience</p>
+              <p>5 Month Experience</p>
             </div>
             <div>
               <p class="heading">Sass</p>
@@ -276,31 +276,27 @@
             </p>
           </div>
           <div id="Client_form">
-            <form action="#" method="GET">
+            <form action="/" id="form" method="GET">
+              <label for="name"></label>
+              <input type="text" id="name" placeholder="NAME" , />
               <div class="input-container">
-                <label for="name" id="ClientName"></label>
-                <input type="text" id="name" placeholder="NAME" , />
+                <p class="error" style="color: red"></p>
               </div>
-              <p class="error">Sorry, invalid format here</p>
+
+              <label for="email"></label>
+              <input type="text" name="email" id="email" placeholder="EMAIL" />
               <div class="input-container">
-                <label for="email" id="ClientEmail"></label>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="EMAIL"
-                />
+                <p class="error">Sorry, invalid format here</p>
               </div>
-              <p class="error">Sorry, invalid format here</p>
+              <textarea
+                name="ClientMessage"
+                id="ClientMessage"
+                placeholder="MESSAGE"
+              ></textarea>
               <div class="input-container">
-                <textarea
-                  name="ClientMessage"
-                  id="ClientMessage"
-                  placeholder="MESSAGE"
-                ></textarea>
+                <p class="error">Sorry, invalid format here</p>
               </div>
-              <p class="error">Sorry, invalid format here</p>
-              <input type="submit" value="Send message" id="btn" />
+              <button type="submit" id="btn">Send Message</button>
             </form>
           </div>
           <div class="footer_rings-1">
