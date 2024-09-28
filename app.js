@@ -1,37 +1,3 @@
-// const form = document.getElementById("form");
-// const Name = document.getElementById("name");
-// const Email = document.getElementById("email");
-// const MessageInput = document.getElementById('ClientMessage');
-// const errorMessages = Array.from(document.querySelectorAll(".error"));
-
-// // Regular Expressions for Validation
-// const namePattern = /^[A-Z ]+$/; // Only capital letters and spaces
-// const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Email format
-// const messagePattern =/^[a-zA-Z0-9\s]*$/;
-
-// form.addEventListener("submit", (e) => {
-//     let isValid = true;
-//   if (!namePattern.test(Name)) {
-//     errorMessages[0].textContent = 'Sorry, invalid format here';
-//     // isValid = false;
-//   }
-
-//   else if (!emailPattern.test(Email)) {
-//     errorMessages[1].textContent = 'Sorry, invalid format here';
-//     // isValid = false;
-//   }
-
-//   else if (!messagePattern.test(MessageInput)) {
-//     errorMessages[2].textContent = 'Sorry, invalid format here';
-//     // isValid = false;
-//   }
-
-//   // Prevent form submission only if there are validation errors
-// //   if (!isValid) {
-//     e.preventDefault();
-// //   }
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
 
@@ -82,3 +48,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Explanation of the Code
+// HTML Element Selection:
+
+// Use document.getElementById to select each form input (name, email, and ClientMessage).
+// Use document.querySelectorAll('.error') to select all <p class="error"></p> elements. These are assumed to be in the correct order relative to the input fields.
+// Regex Patterns for Validation:
+
+// namePattern: Allows letters and spaces, with a minimum length of 2 characters.
+// javascript
+// Copy code
+// const namePattern = /^[A-Za-z\s]{2,}$/;
+// emailPattern: Standard email format pattern that ensures the presence of @ and a valid domain.
+// javascript
+// Copy code
+// const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+// messagePattern: Requires at least 20 characters for the message content.
+// javascript
+// Copy code
+// const messagePattern = /^.{20,}$/;
+// Validation Logic on Form Submission:
+
+// Attach an event listener to the submit event of the form.
+// Check each input value against its corresponding pattern.
+// If any value does not match the pattern, set the error message to "Sorry, invalid format here".
+// If all values are valid, clear the error message for that field.
+// Prevent Form Submission if Any Field is Invalid:
+
+// If the isValid flag is set to false, call e.preventDefault() to stop the form from submitting.
